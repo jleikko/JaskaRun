@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:url"           content="http://jleikko.github.io/JaskaRun" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="JaskaRun Live Monitor" />
+  <meta property="og:description"   content="Watch LiveCam and LiveTracking while Jaska runs" />
+  <meta property="og:image"         content="http://jleikko.github.io/JaskaRun/hhm2015_kaivari.jpg" />
   <title>JaskaRun: Joulujuoksu 2015</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
   <style type="text/css">
@@ -54,6 +59,12 @@
       height: 100vh;
       text-align: center;
     }
+
+    #livecam iframe {
+      width: 90%;
+      height: 90%;
+    }
+
     #coursemap {
       height: auto;
       background-color: black;
@@ -112,7 +123,7 @@
 
   <section id="livecam"><iframe width="100%" height="100%" src="http://www.ustream.tv/embed/21614509?html5ui" allowfullscreen webkitallowfullscreen scrolling="no" frameborder="0" style="border: 0 none transparent;"></iframe></section>
 
-  <section id="livetrack"><iframe width="100%" height="100%" src="http://livetrack.garmin.com/session/89f6089e-08bb-4a4c-b23f-d9c92db4d456/token/4B7691DAD5B9A96EC8D7389496ABA4A5" scrolling="no" frameborder="0"></iframe>
+  <section id="livetrack"><iframe width="90%" height="90%" src="http://livetrack.garmin.com/session/89f6089e-08bb-4a4c-b23f-d9c92db4d456/token/4B7691DAD5B9A96EC8D7389496ABA4A5" scrolling="no" frameborder="0"></iframe>
   </section>
 
   <section id="coursemap"><img id="reitti" src="http://www.joulujuoksu.fi/files/1114/4680/1634/Julkinen_reitti.png" alt="reitti"></section>
@@ -120,12 +131,12 @@
   <div
   class="fb-like"
   data-share="true"
-  data-width="450"
+  data-width="300"
   data-show-faces="true">
 </div>
 </section>
 
-<section id="comments"><div class="fb-comments" data-href="http://jleikko.github.io/JaskaRun" data-width="400" data-numposts="5"></div></section>
+<section id="comments"><div class="fb-comments" data-href="http://jleikko.github.io/JaskaRun" data-width="400" data-numposts="5"></div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -137,6 +148,7 @@
   ga('send', 'pageview');
 
 </script>
+</section>
 
 </body>
 </html>
